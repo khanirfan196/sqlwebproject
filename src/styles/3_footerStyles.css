@@ -1,0 +1,49 @@
+@import url("../styles/1_globalStyles.css");
+
+/* Footer Stylings */
+.footer {
+    background-color: var(--primary-dark);
+    /* height for testing */
+    /* height: 100px; */
+  }
+
+.footerContainer {
+    /* background-color: yellow; */
+    column-gap: 4%;
+    /* height:100px; */
+    /* width:80%; */
+    
+}
+
+.ftr_col > p {
+    font-size: 14px;
+    color: var(--light-grey)
+}
+
+.ftr_col > ul > li {
+    display:inline-block;
+    font-size:12px;
+}
+
+.ftr_col > ul > li > a {
+    color: var(--light-grey);
+}
+
+.ftr_col > ul > li > a:hover {
+    color:var(--light-grey);
+}
+
+
+.ftr_col1, .ftr_col2, .ftr_col3 {
+    padding: 15px 5px;
+    width:32%;
+    /* height:100px; */
+    /* background-color: red; */
+}
+
+.ftrBottomDiv {
+    text-align: center;
+    padding: 5px 5px;
+    color: var(--light-grey);
+    font-size:10px;
+}

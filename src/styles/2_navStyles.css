@@ -1,0 +1,173 @@
+@import url("../styles/1_globalStyles.css");
+
+.navBlock {
+    width:100%;
+}
+
+
+
+.iconSearch {
+    width:80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    width:40%;
+    font-size: 50px;
+}
+
+.searchForm {
+    width:60%;
+    justify-content: flex-end;
+    /* column-gap: 10px; */
+}
+
+.searchBar {
+    width:80%;
+}
+
+input[type="search"] {
+    /* width:100%; */
+    /* height:50px; */
+    outline: none;
+    border: none;
+    /* border-radius: 3px; */
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top: 1px solid var(--secondary-dark);
+    border-bottom: 1px solid var(--secondary-dark);
+    border-left: 1px solid var(--secondary-dark);
+}
+
+input[type="search"]:focus {
+    box-shadow: 4px 4px 20px -4px var(--secondary-dark);
+}
+
+
+input[placeholder] {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.searchBtn {
+    border-radius: 0px;
+    background-color: var(--secondary-dark);
+    font-weight: bolder;
+    color: var(--light-grey);
+}
+
+
+
+/* Nav Styling */
+  
+  .menuItems {
+    /* background-color: #141E61; */
+    background-color: var(--secondary-dark);
+    /* height:50px; */
+  }
+  
+  
+.menuLinks {
+    width:80%;
+    /* height:56px; */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+    /* column-gap: 50px; */
+}
+/* 
+.navLink {
+    height:100%;
+    align-items: center;
+    justify-content: flex-start;
+} */
+
+  .menuLinks > a {
+
+    color: #eeeeee;
+    display: block;
+    padding: 15px 30px;
+  }
+  
+  .menuLinks > a:hover {
+    background-color: var(--primary-dark);
+    transition: 0.2s ease-in-out;
+  } 
+
+
+  .hamMenu {
+    width:100%;
+    height:60px;
+    margin: 0px auto;
+    background-color: var(--secondary-dark);
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    display:none;
+    
+  }
+
+
+
+  .hamBtn {
+    width: 32px;
+    height: 28px;
+    /* background-color: yellow; */
+    margin-right: 10px;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    row-gap: 2px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    
+  }
+
+.hamBtn:hover{
+    cursor: pointer;
+}
+  
+.hamLine1, .hamLine2, .hamLine3 {
+    width:24px;
+    height:6px;
+    background: var(--secondary-dark);
+}
+
+
+.hiddenMenu 
+{
+    width:100%;
+    margin:0px auto;
+    display:none;
+    /* border-bottom: 1px solid black; */
+}
+
+.hiddenMenu > ul > li > a{
+    display:block;
+    width:100%;
+    /* background-color: goldenrod; */
+    padding:20px 10px;
+    border-bottom: 1px solid var(--secondary-dark);
+
+}
+
+.hiddenMenu > ul > li > a:hover{
+    background-color: var(--secondary-dark);
+    color:var(--light-grey)
+}
+
+ .hiddenMenuDisplay 
+  {
+      display:block;
+  }
+
+  /* Class for animation on ham menu icon */
+
+  @keyframes blockMove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+   /* End of Nav Styling */
