@@ -1,0 +1,45 @@
+---
+// Styles
+
+import globalStyles from "../styles/1_globalStyles.css"
+import navStyles from "../styles/2_navStyles.css";
+import footerStyles from "../styles/3_footerStyles.css";
+
+
+// Reponsive Styles
+
+import media700rs from "../styles/4_media_700_responsive.css";
+
+// Components 
+
+import IndexHeaderComp from "../components/webComponents/indexHeaderComp.astro";
+import NavigationComponent from "../components/webComponents/navigationComp.astro";
+import FooterComponent from "../components/webComponents/footerComp.astro";
+---
+
+<!DOCTYPE html>
+<html>
+    <IndexHeaderComp />
+    <body>
+        <NavigationComponent />
+        <div class="basic_dimensions basic_flex_row mainBlock">
+            <div class="common_content_padding col_left">
+              <slot />
+            </div>
+            <div class="common_content_padding col_right">
+                <h3>Related Links</h3>
+                <hr>
+                <ul class="ul_list">
+                    <li><a href="">Relational Databases</a></li>
+                    <li><a href="">NoSQL Databases</a></li>
+                    <li><a href="">SQL Basic Queries</a></li>
+                    <li><a href="">SQL Joins</a></li>
+                    <li><a href="">Stored Procedures and Functions</a></li>
+                    <li><a href="">Triggers</a></li>
+                    <li><a href="">Views and Materialized Views</a></li>
+                </ul>
+            </div>
+        </div>
+        <FooterComponent />
+    </body>
+</html>

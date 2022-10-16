@@ -1,0 +1,48 @@
+---
+// Styles
+
+import globalStyles from "../../styles/1_globalStyles.css"
+import navStyles from "../../styles/2_navStyles.css";
+import footerStyles from "../../styles/3_footerStyles.css";
+
+// Reponsive Styles
+
+import media700rs from "../../styles/4_media_700_responsive.css";
+
+// Components 
+
+//import IndexHeaderComp from "../components/webComponents/indexHeaderComp.astro";
+import Sqlhomekeywords from "../../components/metaKeywordsComponents/sqlhomekeywords.astro";
+import NavigationComponent from "../../components/webComponents/navigationComp.astro";
+import SqlMenuComp from "../../components/rightMenuComponents/sqlMenuComp.astro";
+import FooterComponent from "../../components/webComponents/footerComp.astro";
+---
+
+<!DOCTYPE html>
+<html>
+    <Sqlhomekeywords />
+    <body>
+        <NavigationComponent />
+        <div class="basic_dimensions basic_flex_row mainBlock">
+            <div class="common_content_padding col_left">
+                <h1>SQL - Structure Query Language</h1>
+                <hr>
+                <h2>Initial Setup</h2>
+                <h3>Setting up MS SQL Server with Model Database</h3>
+                <br>
+                <p class="basePara">To learn SQL, we need a Relational Database Software System and a sample/model Database so that we can run queries.
+                    Please follow the <a href="#" class="contentLinks">Installation</a> steps for MS SQL Server and then run the 
+                    <a href="" class="contentLinks">scripts</a> for sample database creation.
+                </p>
+            </div>
+            <div class="common_content_padding col_right">
+              <SqlMenuComp />
+            </div>
+        </div>
+        <FooterComponent />
+    </body>
+</html>
+
+
+
+

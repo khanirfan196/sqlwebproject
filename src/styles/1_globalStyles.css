@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4 {
   display:block;
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 
 .basic_dimensions {
@@ -119,6 +119,15 @@ a {
 .col_right > h3 {
 } */
 
+.contentLinks {
+  color: var(--orange-shade);
+  font-weight: bold;
+}
+
+.contentLinks:hover{
+  color: var(--primary-dark);
+}
+
 
 .ul_list {
   /* margin: 10px 0px; */
@@ -135,7 +144,7 @@ a {
 
 .ul_list > li > a:hover{
   background-color: var(--secondary-dark);
-  color:var(--light-grey);
+  color:var(--orange-shade);
   border-right: 10px solid var(--primary-dark);
 }
 
@@ -155,12 +164,9 @@ a {
   border-radius: 3px;
 }
 
-.btnArrows{
-  fill: var(--light-grey);
-}
-
 .nextPrev>a:hover{
   background-color: var(--primary-dark);
+  color:var(--orange-shade);
 }
 
 /* End of Main Section Styling*/

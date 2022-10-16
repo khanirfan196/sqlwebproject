@@ -58,6 +58,9 @@ input[placeholder] {
     color: var(--light-grey);
 }
 
+.searchBtn:hover {
+    color: var(--orange-shade);
+}
 
 
 /* Nav Styling */
@@ -93,6 +96,7 @@ input[placeholder] {
   
   .menuLinks > a:hover {
     background-color: var(--primary-dark);
+    color:var(--orange-shade);
     transition: 0.2s ease-in-out;
   } 
 
@@ -115,7 +119,7 @@ input[placeholder] {
     width: 32px;
     height: 28px;
     /* background-color: yellow; */
-    margin-right: 10px;
+    margin-right: 5.5%;
     border:none;
     display:flex;
     flex-direction: column;
@@ -166,8 +170,4 @@ input[placeholder] {
 
   /* Class for animation on ham menu icon */
 
-  @keyframes blockMove {
-    from {top: 0px;}
-    to {top: 200px;}
-  }
    /* End of Nav Styling */

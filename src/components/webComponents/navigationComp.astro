@@ -1,0 +1,51 @@
+
+
+<!-- Navigation Component -->
+<nav class="navBlock">
+    <div class="common_padding basic_flex_row iconSearch">
+      <p class="icon"><a href="/">SQLSite</a></p>
+      <form action="../../search" method="GET" class="searchForm basic_flex_row" target="_blank">
+        <input
+          type="search"
+          placeholder="Search our site"
+          class="searchBar"
+        />
+        <input type="submit" value="Search" class="baseBtn searchBtn" />
+      </form>
+    </div>
+    <div class="menuItems">
+      <div class="basic_flex_row basic_links menuLinks">
+          <a href="/" class="">Home</a>
+          <a href="/sqlpages/1_sqlhome" class="">SQL</a>
+          <a href="#" class="">T-SQL</a>
+          <a href="#" class="">SQL Server</a>
+          <a href="#" class="">Concepts</a>
+          <a href="#" class="">Scripts</a>
+          <a href="#" class="">Interview Questions</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hamburger MenuButton for Responsive Design -->
+  <div class="hamMenu">
+    <button class="hamBtn" onclick="showMenu()">
+      <span class="hamLine1"></span>
+      <span class="hamLine2"></span>
+      <span class="hamLine3"></span>
+    </button>
+  </div>
+  <!-- End of Hamburger MenuButton -->
+  <!-- Hidden Menu -->
+  <div class="hiddenMenu" id="hdnMenu">
+    <ul>
+      <li><a href="/" class="">Home</a></li>
+      <li><a href="/sqlpages/1_sqlhome" class="">SQL</a></li>
+      <li> <a href="#" class="">T-SQL</a></li>
+      <li><a href="#" class="">SQL Server</a></li>
+      <li><a href="#" class="">Concepts</a></li>
+      <li> <a href="#" class="">Scripts</a></li>
+      <li><a href="#" class="">Interview Questions</a></li>
+    </ul>
+  </div>
+  <!-- End of Hidden Menu -->
+  <!-- End of NavMenu -->
