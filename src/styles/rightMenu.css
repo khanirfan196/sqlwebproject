@@ -1,0 +1,16 @@
+
+@import url("../styles/1_globalStyles.css");
+
+
+
+.right_menu > li > a {
+    display:block;
+    padding:10px;
+    color: var(--secondary-dark);
+}
+
+.right_menu > li > a:hover {
+    background-color: var(--primary-dark);
+    color:var(--orange-shade);
+    border-radius: 3px;
+}

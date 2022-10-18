@@ -25,7 +25,8 @@
 
 /* Use the variables */
 body {
-  background-color: var(--light-grey);
+  /* background-color: var(--light-grey); */
+  background-color: #F5F5F5;
   color: var(--primary-text);
   font-family:sans-serif;
 }
@@ -172,9 +173,10 @@ a {
 /* End of Main Section Styling*/
 
 .codeBlock {
-  background-color: var(--code-block-bg);
+  /* background-color: var(--code-block-bg); */
+  background-color: #DCDCDC;
   padding:15px;
-  font-size: 16px;
+  font-size: 14px;
   /* font-weight: bolder; */
   font-weight:bold;
   color: #141E61;
