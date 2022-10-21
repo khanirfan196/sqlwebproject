@@ -13,32 +13,32 @@ import media700 from "../styles/4_media_700_responsive.css"
 
 // Components 
 
+
 import NavigationComponent from "../components/webComponents/navigationComp.astro";
+import SqlMenuComponent from "../components/rightMenuComponents/sqlMenuComp.astro";
 import FooterComponent from "../components/webComponents/footerComp.astro";
 
-//const title = "SQLSite"
-//const description = "SQLSite is a resourceful website to learn SQL, TSQL, and Data Analytics"
-//const keywords = "SQLSite, SQL, TSQL, Structured Query Language, Transact-Strucutre Query language, Data Analytics, Queries, Scripts"
 
-const {title, description, keywords } = Astro.props;
+const {frontmatter} = Astro.props
 ---
+
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{title}</title>
-        <meta name="description" content={description}>
-        <meta name="keywords" content={keywords}>
+        <title>{frontmatter.title}</title>
+        <meta name="description" content={frontmatter.description}>
+        <meta name="keywords" content={frontmatter.keywords}>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <script type="text/javascript">
         function showMenu() {
             var menu = document.getElementById("hdnMenu");
             menu.classList.toggle("hiddenMenuDisplay");
-        }
-    </script>
+    }
+        </script>
     </head>
     <body>
         <NavigationComponent />
@@ -47,17 +47,7 @@ const {title, description, keywords } = Astro.props;
               <slot />
             </div>
             <div class="common_content_padding col_right">
-                <h3>Related Links</h3>
-                <hr>
-                <ul class="ul_list">
-                    <li><a href="">Relational Databases</a></li>
-                    <li><a href="">NoSQL Databases</a></li>
-                    <li><a href="">SQL Basic Queries</a></li>
-                    <li><a href="">SQL Joins</a></li>
-                    <li><a href="">Stored Procedures and Functions</a></li>
-                    <li><a href="">Triggers</a></li>
-                    <li><a href="">Views and Materialized Views</a></li>
-                </ul>
+                <SqlMenuComponent/>        
             </div>
         </div>
         <FooterComponent />

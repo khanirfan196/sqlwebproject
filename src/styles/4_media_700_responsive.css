@@ -1,4 +1,4 @@
-@import url("../styles/1_globalStyles.css");
+/* @import url("../styles/1_globalStyles.css"); */
 
 
 @media (max-width: 900px) {
@@ -47,6 +47,7 @@ input[type="search"] {
     width:100%;
     border-right:none;
 }
+
 
 
 .footerContainer {

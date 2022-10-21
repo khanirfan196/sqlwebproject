@@ -1,0 +1,38 @@
+---
+// Styles
+
+import globalStyles from "../styles/1_globalStyles.css"
+import navStyles from "../styles/2_navStyles.css";
+import rightMenu from "../styles/rightMenu.css";
+import footerStyles from "../styles/3_footerStyles.css";
+
+
+// Reponsive Styles
+
+import media700 from "../styles/4_media_700_responsive.css"
+
+// Components 
+
+import CommonHeader from "../components/commonHeader.astro";
+import NavigationComponent from "../components/webComponents/navigationComp.astro";
+import FooterComponent from "../components/webComponents/footerComp.astro";
+import { Frontmatter } from "../../astro.config.mjs";
+
+---
+
+<!DOCTYPE html>
+<html>
+   <slot name="CommonHeaderComp"/>
+    <body>
+        <NavigationComponent />
+        <div class="basic_dimensions basic_flex_row mainBlock">
+            <div class="common_content_padding col_left">
+              <slot />
+            </div>
+            <div class="common_content_padding col_right">
+                <slot name="RightMenuComp" />       
+            </div>
+        </div>
+        <FooterComponent />
+    </body>
+</html>

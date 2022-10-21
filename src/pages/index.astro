@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/webLayout.astro";
+
+const title = "index page"
+const description = "SQL Site is a resourceful website for SQL, TSQL, and Data Analytics"
+const keywords = "SQL, TSQL, What is SQL, Structured Query Langauge, Relational Databases, Explanation, Types of RDBMS"
 ---
 
 
-<Layout>
+<Layout title= {title} description = {description} keywords = {keywords}>
   <h1>Welcome to SQLSite</h1>
   <h5>A resourceful website to understand SQL Concepts and Queries</h5>
   <br />
@@ -66,13 +70,12 @@ VALUES ('Café', 1, 'Tauentzienstraße 44', '2020/1/21', '2020/1/10 8:2:49');
 INSERT INTO customer (customer_name, city_id, customer_address, next_call_date, ts_inserted)
 VALUES ('Restaurant', 3, 'Ulica lipa 15', '2020/1/21', '2020/1/10 9:20:21');
     </pre>
-
     </span>
     <br>
-      <br>
     <span class="warningText">
       // Warning Text 
     </span>
     </code>
   </div>
+  <br>
 </Layout>
