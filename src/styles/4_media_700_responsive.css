@@ -10,6 +10,7 @@
 
 .icon {
     width:100%;
+    margin-bottom: 10px;
 }
 
 .searchForm {
@@ -52,6 +53,12 @@ input[type="search"] {
 
 .footerContainer {
     width:90%;
+    flex-direction: column;
 }
+
+.ftr_col {
+    width:100%;
+}
+
 
 }
