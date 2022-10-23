@@ -5,7 +5,6 @@ description: This is a blog page
 keywords: sql blog, tsql, keyword
 ---
 
-<CommonHeaderComp />
 <Layout>
 
 # MS SQL Server Installation and Model Database Setup

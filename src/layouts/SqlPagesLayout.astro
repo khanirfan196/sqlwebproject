@@ -7,6 +7,9 @@ import navStyles from "../styles/2_navStyles.css";
 import rightMenu from "../styles/rightMenu.css";
 import footerStyles from "../styles/3_footerStyles.css";
 
+// JavaScript
+
+//import prismJS from "../js/prism";
 
 // Reponsive Styles
 
@@ -18,6 +21,7 @@ import media700 from "../styles/4_media_700_responsive.css"
 import NavigationComponent from "../components/webComponents/navigationComp.astro";
 import SqlMenuComponent from "../components/rightMenuComponents/sqlMenuComp.astro";
 import FooterComponent from "../components/webComponents/footerComp.astro";
+import JsScriptsComponent from "../components/webComponents/jsScriptsComp.astro";
 
 
 const {frontmatter} = Astro.props
@@ -33,32 +37,7 @@ const {frontmatter} = Astro.props
         <meta name="description" content={frontmatter.description}>
         <meta name="keywords" content={frontmatter.keywords}>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="../public/js/prism.js"></script>
-        <script type="text/javascript">
-        function showMenu() {
-            var menu = document.getElementById("hdnMenu");
-            menu.classList.toggle("hiddenMenuDisplay");
-        }
-
-        async function sleep(msec) {
-            return new Promise(resolve => setTimeout(resolve, msec));
-        }
-
-       async function copyCode() {
-          var copyBtn = document.getElementsByClassName("copyBtn");
-          var codeElement = document.getElementsByClassName("language-sql");
-          //console.log(codeElement[0].textContent);
-          var text = codeElement[0].textContent;
-          navigator.clipboard.writeText(text);
-          copyBtn[0].innerHTML = "Copied!!";
-          //copyBtn[0].innerHTML = "Copy Code";
-          copyBtn[0].style.backgroundColor = "#5609B8 ";
-            await sleep(5000);
-            copyBtn[0].innerHTML = "Copy Code";
-            copyBtn[0].style.backgroundColor = "#7c2ee2";
-        }
-    
-        </script>
+        <JsScriptsComponent />
     </head>
     <body>
         <NavigationComponent />
