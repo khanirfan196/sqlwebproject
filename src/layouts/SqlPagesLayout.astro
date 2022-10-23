@@ -21,7 +21,6 @@ import media700 from "../styles/4_media_700_responsive.css"
 import NavigationComponent from "../components/webComponents/navigationComp.astro";
 import SqlMenuComponent from "../components/rightMenuComponents/sqlMenuComp.astro";
 import FooterComponent from "../components/webComponents/footerComp.astro";
-import JsScriptsComponent from "../components/webComponents/jsScriptsComp.astro";
 
 
 const {frontmatter} = Astro.props
@@ -37,7 +36,9 @@ const {frontmatter} = Astro.props
         <meta name="description" content={frontmatter.description}>
         <meta name="keywords" content={frontmatter.keywords}>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <JsScriptsComponent />
+        <!-- <JsScriptsComponent /> -->
+        <script is:inline src="/js/main.js"></script>
+        <script is:inline src="/js/prism.js"></script>
     </head>
     <body>
         <NavigationComponent />

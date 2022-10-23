@@ -15,7 +15,6 @@ import media700 from "../styles/4_media_700_responsive.css"
 
 import NavigationComponent from "../components/webComponents/navigationComp.astro";
 import FooterComponent from "../components/webComponents/footerComp.astro";
-import JSScriptsComponent from "../components/webComponents/jsScriptsComp.astro"
 
 //const title = "SQLSite"
 //const description = "SQLSite is a resourceful website to learn SQL, TSQL, and Data Analytics"
@@ -33,7 +32,9 @@ const {title, description, keywords } = Astro.props;
         <meta name="description" content={description}>
         <meta name="keywords" content={keywords}>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <JSScriptsComponent/>
+        <!-- <JSScriptsComponent/> -->
+        <script is:inline src="/js/main.js"></script>
+        <script is:inline src="/js/prism.js"></script>
     </head>
     <body>
         <NavigationComponent />

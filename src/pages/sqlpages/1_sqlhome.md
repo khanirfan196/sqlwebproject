@@ -38,3 +38,4 @@ VALUES ('Restaurant', 3, 'Ulica lipa 15', '2020/1/21', '2020/1/10 9:20:21');
 </div>
 </Layout>
 <RightMenuComp />
+
