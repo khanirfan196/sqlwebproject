@@ -15,7 +15,17 @@
 
 .icon {
     width:40%;
-    font-size: 50px;
+    height: 70px;
+    /* background-color: red; */
+    padding: 10px 0px;
+}
+
+.icon a{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--orange-shade);
+    font-weight: bold;
+    /* background-color: yellow; */
+    font-size: 48px;
 }
 
 .searchForm {
@@ -52,10 +62,11 @@ input[placeholder] {
 }
 
 .searchBtn {
-    border-radius: 0px;
     background-color: var(--secondary-dark);
     font-weight: bolder;
     color: var(--light-grey);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .searchBtn:hover {

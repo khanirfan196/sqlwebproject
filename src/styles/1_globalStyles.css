@@ -35,6 +35,11 @@ h3,
 h4 {
   display: block;
   margin: 20px 0px;
+  color: var(--orange-shade);
+}
+
+h3 {
+  
 }
 
 p {
@@ -79,7 +84,7 @@ a {
   background-color: none;
   /* color: var(--primary-text); */
   border: none;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   padding: 20px 40px;
 }
 
@@ -125,6 +130,12 @@ a {
 /* 
 .col_right > h3 {
 } */
+
+.rightMenuHdr{
+  background-color: var(--secondary-dark);
+  padding:10px;
+  border-radius: 3px;
+}
 
 .contentLinks {
   color: var(--orange-shade);
@@ -189,6 +200,7 @@ a {
   border:none;
   /* margin-left: 86%; */
   float:right;
+  border-radius: 3px;
 }
 
 .copyBtn:hover{
@@ -215,10 +227,13 @@ a {
   font-family:"Inconsolata";
   border: 1px solid var(--secondary-dark);;
   border-style:ridge; */
-  width: 100%; 
+  width:100%; 
+  margin-bottom: 32px;
   /* padding: 20px; */
   background-color: #2d2d2d;
   float: right;
+  overflow-x: scroll;
+  border-radius: 3px;
 }
 
 
