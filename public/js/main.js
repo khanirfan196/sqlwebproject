@@ -8,15 +8,17 @@ async function sleep(msec) {
 }
 
 async function copyCode() {
-  var copyBtn = document.getElementsByClassName("copyBtn");
+  //var copyBtn = document.getElementsByName("copyBtn");
   var codeElement = document.getElementsByClassName("language-sql");
   //console.log(codeElement[0].textContent);
   var text = codeElement[0].textContent;
   navigator.clipboard.writeText(text);
-  copyBtn[0].innerHTML = "Copied!!";
+  alert("Code Copied!!");
+  // copyBtn[0].innerHTML = "Copied!!";
   //copyBtn[0].innerHTML = "Copy Code";
-  copyBtn[0].style.backgroundColor = "#5609B8 ";
-  await sleep(5000);
-  copyBtn[0].innerHTML = "Copy Code";
-  copyBtn[0].style.backgroundColor = "#7c2ee2";
+  //copyBtn[0].style.backgroundColor = "#5609B8 ";
+  //await sleep(5000);
+  //copyBtn[0].innerHTML = "Copy Code";
+  //copyBtn[0].style.backgroundColor = "#7c2ee2";
+  // var dem = document.getEle
 }

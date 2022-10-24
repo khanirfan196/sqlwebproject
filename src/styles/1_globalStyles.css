@@ -192,23 +192,23 @@ a {
   /* position: relative;
   float:right;
   margin: 15px 15px; */
-  height:50px;
-  width: 100px;
+  height:25px;
+  /* width: 0px; */
   padding: 0px 5px;
   background-color: #7c2ee2;
   color:white;
-  border:none;
+  border: #7c2ee2;
   /* margin-left: 86%; */
-  float:right;
-  border-radius: 3px;
+  /* float:right; */
 }
 
 .copyBtn:hover{
   cursor: pointer;
+  background-color: #4d00b3;
 }
 
 .copyBtn:active {
-  transform: translateY(1%);
+  transform: translateY(-1%);
 }
 
 .codeBlock {
