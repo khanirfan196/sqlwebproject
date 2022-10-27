@@ -14,6 +14,7 @@ import media700 from "../styles/4_media_700_responsive.css"
 // Components 
 
 import NavigationComponent from "../components/webComponents/navigationComp.astro";
+import CodeAlertComponent from "../components/webComponents/codeAlert.astro";
 import FooterComponent from "../components/webComponents/footerComp.astro";
 
 //const title = "SQLSite"
@@ -44,7 +45,6 @@ const {title, description, keywords } = Astro.props;
             </div>
             <div class="common_content_padding col_right">
                 <h3 class="rightMenuHdr">Related Links</h3>
-                <hr>
                 <ul class="ul_list">
                     <li><a href="">Relational Databases</a></li>
                     <li><a href="">NoSQL Databases</a></li>
@@ -55,6 +55,7 @@ const {title, description, keywords } = Astro.props;
                     <li><a href="">Views and Materialized Views</a></li>
                 </ul>
             </div>
+            <CodeAlertComponent/>
         </div>
         <FooterComponent />
     </body>

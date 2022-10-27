@@ -36,14 +36,13 @@ h4 {
   display: block;
   margin: 20px 0px;
   color: var(--orange-shade);
-}
-
-h3 {
-  
+  /* font-size: clamp(200px, 1vw, 1024px); */
+  font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
 }
 
 p {
   line-height: 30px;
+  font-size: clamp(0.9rem, 0.5vw + 0.5rem, 2.2rem);
 }
 
 .basic_dimensions {
@@ -55,8 +54,8 @@ p {
   padding: 20px 0;
 }
 
-.common_content_padding {
-  padding: 35px 10px;
+.common_content_padding { 
+   padding: 35px 10px; 
 }
 
 .basic_flex_row {
@@ -132,9 +131,11 @@ a {
 } */
 
 .rightMenuHdr{
+  margin:10px 0px 10px 0px;
   background-color: var(--secondary-dark);
   padding:10px;
   border-radius: 3px;
+  font-size: clamp(0.9rem, 0.5vw + 0.5rem, 2.2rem);
 }
 
 .contentLinks {
@@ -185,6 +186,29 @@ a {
   color: var(--orange-shade);
 }
 
+/* New buttons */
+
+.PrevNext {
+  align-items: center;
+  justify-content: space-between;
+  /* border-radius: 5px; */
+  border-radius: 3px;
+}
+
+.PrevNext > a > svg{
+  border-radius: 3px;
+}
+
+.PrevNext > a > svg >rect:hover{  
+  fill: var(--primary-dark);
+}
+
+.PrevNext > a > svg >path:hover{
+  fill: var(--orange-shade);
+  
+}
+
+
 /* End of Main Section Styling*/
 
 
@@ -195,16 +219,19 @@ a {
   height:25px;
   /* width: 0px; */
   padding: 0px 5px;
-  background-color: #7c2ee2;
+  /* background-color: #7c2ee2; */
   color:white;
-  border: #7c2ee2;
+  /* border: #7c2ee2; */
+  background-color: var(--secondary-dark);
+  border:None;
   /* margin-left: 86%; */
   /* float:right; */
 }
 
 .copyBtn:hover{
   cursor: pointer;
-  background-color: #4d00b3;
+  /* background-color: #4d00b3; */
+  background-color: var(--primary-dark);
 }
 
 .copyBtn:active {
@@ -236,12 +263,23 @@ a {
   border-radius: 3px;
 }
 
-
-/* 
-.codeComments {
-  color: #1e8449;
+.copyAlert {
+  display:none; 
+  width:150px;
+  height: 50px;
+  background-color: var(--secondary-dark);
+  color:var(--secondary-text);
+  position:fixed; 
+  bottom:0;
+  right:0;
+  padding:10px; 
+  border-left: 5px solid var(--primary-dark);
+  transform:translateX(100%);
+  transition: transform 0.5s ease-in-out;
 }
 
-.warningText {
-  color: #d35400;
-} */
+.copyAlertDisplay {
+  display:block;
+  z-index: 100;
+   transform : translateX(-0%);
+}
